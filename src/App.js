@@ -1,8 +1,8 @@
+import Routes from "./Routes";
+
 const App = () => {
   return (
-    <div>
-      oi wolfi
-    </div>
+    <Routes />
   );
 }
 
