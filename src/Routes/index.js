@@ -1,16 +1,15 @@
-import { BrowserRouter, Route, Switch } from "react-router-dom";
-import IncomeOutcomePage from "../pages/IncomeOutcomePage";
-import MainPage from "../pages/MainPage";
+import React from 'react';
+import { BrowserRouter, Route, Switch } from 'react-router-dom';
+import ExpensesPage from '../pages/ExpensesPage';
+import MainPage from '../pages/MainPage';
 
-const Routes = () => {
-  return (
-    <BrowserRouter>
-      <Switch>
-        <Route exact path="/" component={ MainPage } />
-        <Route exact path="/income-outcome" component={ IncomeOutcomePage } />
-      </Switch>
-    </BrowserRouter>
-  );
-};
+const Routes = () => (
+  <BrowserRouter>
+    <Switch>
+      <Route exact path="/" component={ MainPage } />
+      <Route exact path="/expenses" component={ ExpensesPage } />
+    </Switch>
+  </BrowserRouter>
+);
 
 export default Routes;
